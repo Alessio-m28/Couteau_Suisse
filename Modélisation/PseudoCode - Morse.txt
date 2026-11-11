@@ -1,0 +1,9 @@
+Fonction Traducteur(mot)
+	MET mot en MAJUSCULE
+	POUR CHAQUE lettre DANS mot
+		SI lettre EST A
+			mettre .- dans la variable phraseTraduite
+		…
+	fin POUR
+	retourne phraseTraduite
+FIN Fonction

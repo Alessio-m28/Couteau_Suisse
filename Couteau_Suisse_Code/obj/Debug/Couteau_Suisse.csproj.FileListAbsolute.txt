@@ -1,0 +1,8 @@
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\obj\Debug\Couteau_Suisse.csproj.AssemblyReference.cache
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\obj\Debug\Couteau_Suisse.csproj.CoreCompileInputs.cache
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\bin\Debug\Couteau_Suisse.exe.config
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\bin\Debug\Couteau_Suisse.exe
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\bin\Debug\Couteau_Suisse.pdb
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\obj\Debug\Couteau_Suisse.exe
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\obj\Debug\Couteau_Suisse.pdb
+D:\ETML\I114 - Couteau_Suisse\Couteau_Suisse\Couteau_Suisse_Code\obj\Debug\Couteau_Suisse.exe.config

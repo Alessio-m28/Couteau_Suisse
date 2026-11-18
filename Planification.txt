@@ -1,0 +1,7 @@
+11.11	Administration: (création du Repo GitHub + faire la modélisation + début code)
+18.11	Fin 1e fonctionnalité: (codage de la traduction + réglage des bugs)
+25.11	Début 2e fonctionnalité: (Décimal -> Binaire + Binaire -> Décimal )
+2.12	Fin 2e fonctionnalité: (Binaire -> Octal + Octal -> Binaire )
+9.12	Début 3e fonctionnalité: (Encodage)
+16.12	Continuation 3e fonctionnalité: (Décodage)
+23.12	Fin 3e fonctionnalité: (gestion des entrées + réglage des bugs dans le programme)

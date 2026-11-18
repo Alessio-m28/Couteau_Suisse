@@ -47,6 +47,7 @@ namespace Couteau_Suisse
             }
         }
 
+        //Joue le son de la phrase traduite en morse
         static void JouerMorse(string phrase)
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -60,14 +61,13 @@ namespace Couteau_Suisse
                     case '-': Console.Write(symbole); Console.Beep(800, 750); break;
                     case '/': Console.Write(symbole); Thread.Sleep(1000); break;
                     case ' ': Console.Write(symbole); break;
-
-
                 }
             }
 
             Console.ResetColor();
         }
 
+        //Traduit une phrase qu'on entre en morse
         static string ConvertToMorse()
         {
 
@@ -144,9 +144,6 @@ namespace Couteau_Suisse
 
                 }
             }
-
-
-            
 
             return phrase;
 

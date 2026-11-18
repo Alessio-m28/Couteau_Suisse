@@ -17,7 +17,7 @@ namespace Couteau_Suisse
             while (true)
             {
                 
-                Console.Write("Bienvenue, veuillez choisir une de ces 3 option: \n\n1. Chiffrement en Morse\n2. A venir\n3. A venir \n4. Quitter \nVotre choix: ");
+                Console.Write("Bienvenue, veuillez choisir une de ces 3 option: \n\n1. Chiffrement en Morse\n2. A venir\n3. A venir \n0. Quitter \nVotre choix: ");
                 string choix = Console.ReadLine();
 
                 if (choix == "1")
@@ -28,7 +28,15 @@ namespace Couteau_Suisse
                     Console.Write("\n\n");
                     
                 }
-                else if(choix == "4")
+                else if (choix == "2")
+                {
+                    Console.Write("Choix disponible prochainement");
+                }
+                else if (choix == "3")
+                {
+                    Console.Write("Choix disponible prochainement");
+                }
+                else if (choix == "0")
                 {
                     Environment.Exit(0);
                 }
@@ -111,6 +119,27 @@ namespace Couteau_Suisse
                     case '7': phrase += "--... "; break;
                     case '8': phrase += "---.. "; break;
                     case '9': phrase += "----. "; break;
+                    case '.': phrase += ".-.-.- "; break;
+                    case ',': phrase += "--..-- "; break;
+                    case '?': phrase += "..--.. "; break;
+                    case '!': phrase += "-.-.-- "; break;
+                    case ';': phrase += "-.-.-. "; break;
+                    case '*': phrase += "-..- "; break;
+                    case ':': phrase += "---... "; break;
+                    case '/': phrase += "-..-. "; break;
+                    case '+': phrase += ".-.-. "; break;
+                    case '-': phrase += "-....- "; break;
+                    case '=': phrase += "-...- "; break;
+                    case '(': phrase += "-.--.- "; break;
+                    case ')': phrase += "-.--.- "; break;
+                    case '@': phrase += ".--.-. "; break;
+                    case '"': phrase += ".-..-. "; break;
+                    case '&': phrase += ".-... "; break;
+                    case '_': phrase += "..--.- "; break;
+                    case '$': phrase += "...-..- "; break;
+                    case 'É': phrase += "..-.. "; break;
+                    case 'À': phrase += ".--.- "; break;
+                    case 'È': phrase += ".-..- "; break;
                     default: Console.ForegroundColor = ConsoleColor.Red; Console.Write($"Le charactère {lettre} à été ignoré.\n"); Console.ResetColor(); break;
 
                 }

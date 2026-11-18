@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -21,7 +22,11 @@ namespace Couteau_Suisse
 
                 if (choix == "1")
                 {
-                    Console.Write($"\n{CodeToMorse()}\n");
+
+                    Console.Write("\n");
+                    JouerMorse(ConvertToMorse());
+                    Console.Write("\n\n");
+                    
                 }
                 else if(choix == "4")
                 {
@@ -34,14 +39,37 @@ namespace Couteau_Suisse
             }
         }
 
-        static string CodeToMorse()
+        static void JouerMorse(string phrase)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            foreach (char symbole in phrase)
+            {
+
+                switch (symbole)
+                {
+                    case '.': Console.Write(symbole); Console.Beep(800, 200); Thread.Sleep(200); break;
+                    case '-': Console.Write(symbole); Console.Beep(800, 750); break;
+                    case '/': Console.Write(symbole); Thread.Sleep(1000); break;
+                    case ' ': Console.Write(symbole); break;
+
+
+                }
+            }
+
+            Console.ResetColor();
+        }
+
+        static string ConvertToMorse()
+        {
+
+            Console.Clear();
             string phrase = "";
 
             Console.Write("Veuillez entrer une phrase a coder en morse: ");
             string phraseToTranslate = Console.ReadLine();
             phraseToTranslate = phraseToTranslate.ToUpper();
-
+        
             foreach(char lettre in phraseToTranslate)
             {
                 switch(lettre)
@@ -73,10 +101,23 @@ namespace Couteau_Suisse
                     case 'Y': phrase += "-.-- "; break;
                     case 'Z': phrase += "--.. "; break;
                     case ' ': phrase += "/ "; break;
-                    default: Console.Write($"Le charactère {lettre} à été ignoré.\n"); break;
+                    case '0': phrase += "----- "; break;
+                    case '1': phrase += ".---- "; break;
+                    case '2': phrase += "..--- "; break;
+                    case '3': phrase += "...-- "; break;
+                    case '4': phrase += "....- "; break;
+                    case '5': phrase += "..... "; break;
+                    case '6': phrase += "-.... "; break;
+                    case '7': phrase += "--... "; break;
+                    case '8': phrase += "---.. "; break;
+                    case '9': phrase += "----. "; break;
+                    default: Console.ForegroundColor = ConsoleColor.Red; Console.Write($"Le charactère {lettre} à été ignoré.\n"); Console.ResetColor(); break;
 
                 }
             }
+
+
+            
 
             return phrase;
 

@@ -17,7 +17,7 @@ namespace Couteau_Suisse
             while (true)
             {
                 
-                Console.Write("Bienvenue, veuillez choisir une de ces 3 option: \n\n1. Chiffrement en Morse\n2. A venir\n3. A venir \n0. Quitter \nVotre choix: ");
+                Console.Write("Bienvenue, veuillez choisir une de ces 3 option: \n\n1. Chiffrement en Morse\n2. Conversion entre bases\n3. (A venir) \n0. Quitter \nVotre choix: ");
                 string choix = Console.ReadLine();
 
                 if (choix == "1")
@@ -30,7 +30,34 @@ namespace Couteau_Suisse
                 }
                 else if (choix == "2")
                 {
-                    Console.Write("Choix disponible prochainement");
+                    Console.Write("Veillez choisir le type de conversion: \n1. Base 2 -> Base 10 \n2. Base 10 -> Base 2 \n3. Base 16 -> Base 10 \n4. Base 10 -> Base 16 \n3. Base 8 -> Base 10 \n3. Base 10 -> Base 8");
+                    Console.Write("\n\nVotre choix: ");
+                    string choixConversion = Console.ReadLine();
+
+                    if (choixConversion == "1")
+                    {
+                        BinaryToDecimal();
+                    }
+                    else if(choixConversion == "2")
+                    {
+
+                    }
+                    else if(choixConversion == "3")
+                    {
+
+                    }
+                    else if (choixConversion == "4")
+                    {
+
+                    }
+                    else if (choixConversion == "5")
+                    {
+
+                    }
+                    else if (choixConversion == "6")
+                    {
+
+                    }
                 }
                 else if (choix == "3")
                 {
@@ -147,6 +174,29 @@ namespace Couteau_Suisse
 
             return phrase;
 
+        }
+
+        static double BinaryToDecimal()
+        {
+            double resultat = 0;
+
+            List<double> binaire = new List<double>();
+            Console.Write("Veillez entrer un chiffre a convertir: ");
+            string nbrToConvert = Console.ReadLine();
+
+            
+           
+                foreach(char c in nbrToConvert)
+                {
+                    binaire.Add(c);
+                }
+            
+            for(int i = 0; i < binaire.Count; i++)
+            {
+                resultat += binaire[i] * Math.Pow(2, i);
+            }
+
+            return resultat;
         }
     }
 }
